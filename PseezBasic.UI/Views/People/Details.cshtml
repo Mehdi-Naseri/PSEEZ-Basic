@@ -1,0 +1,98 @@
+﻿@model PseezBasic.UI.Models.Person
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>جزئیات</h2>
+
+<div>
+    <h4>Person</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.City.Code)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.City.Code)
+        </dd>
+
+        @*<dt>
+            @Html.DisplayNameFor(model => model.Employee.Code)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Employee.Code)
+        </dd>*@
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Gender.Title)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Gender.Title)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Family)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Family)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FatherName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FatherName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BirthDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BirthDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IdNumber)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IdNumber)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NationalCode)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NationalCode)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Mobile)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Mobile)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("ویرایش", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("بازگشت به لیست", "Index")
+</p>

@@ -1,0 +1,42 @@
+﻿@model PseezBasic.UI.Models.Province
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>جزئیات</h2>
+
+<div>
+    <h4>استان</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Code)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Code)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Country_Id)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Country_Id)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("ویرایش", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("بازگشت به لیست", "Index")
+</p>

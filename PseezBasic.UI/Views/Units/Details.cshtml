@@ -1,0 +1,58 @@
+﻿@model PseezBasic.UI.Models.Unit
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>جزئیات</h2>
+
+<div>
+    <h4>واحد</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Unit2.Code)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Unit2.Code)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Code)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Code)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IsManagement)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IsManagement)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Show)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Show)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("ویرایش", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("بازگشت به لیست", "Index")
+</p>

@@ -1,0 +1,40 @@
+﻿@model PseezBasic.UI.Models.EmploymentState
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>حذف</h2>
+
+<h3>آیا از حذف این مورد اطمینان دارید؟</h3>
+<div>
+    <h4>حالت کار کارمند</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Title)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Title)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Describer)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Describer)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="حذف" class="btn btn-default" /> |
+            @Html.ActionLink("بازگشت", "Index")
+        </div>
+    }
+</div>

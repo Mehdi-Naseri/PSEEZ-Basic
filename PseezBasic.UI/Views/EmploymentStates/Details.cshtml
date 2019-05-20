@@ -1,0 +1,34 @@
+﻿@model PseezBasic.UI.Models.EmploymentState
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>توضیحات</h2>
+
+<div>
+    <h4>حالت کار کارمند</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Title)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Title)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Describer)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Describer)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("ویرایش", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("بازگشت", "Index")
+</p>
